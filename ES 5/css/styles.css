@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, button{
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#23459059, transparent);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    margin: 0px;
+    -webkit-user-select: none;
+    font-family: 'Khula', sans-serif;
+}
+.wrap {
+    max-width:1320px;
+    display:flex;
+    min-width: 960px;
+    flex-direction: column;
+}
+
+.wrap h1 {
+    font-size:50px;
+}
+
+.wrap h3 {
+
+}
+.num-task{
+    font-size: 40px;
+    font-weight: bold;
+    margin-right:10px;
+    height: 35px;
+
+}
+.wrap .line-hw:first-child {
+    border-top: 2px solid #E3405F;
+}
+.wrap .line-hw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:25px;
+    padding-top:25px;
+    border-bottom: 2px solid #E3405F;
+}
+
+.wrap .line-hw .line-hw__input{
+    height: 35px;
+    max-width: 80px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    padding: 10px;
+    text-align: center;
+}
+.wrap .line-hw .line-hw__input:hover,.wrap .line-hw .line-hw__input:focus{
+    height:35px;
+    max-width:90px;
+    box-sizing: border-box;
+    border:2px solid #E3405F;
+}
+
+.wrap .line-hw .line-hw__display {
+    padding: 0px 10px;
+    background:#fbe6eb;
+    height: 35px;
+    transition: 1s;
+    margin-left: 20px;
+    min-width:35px;
+    line-height: 40px;
+    text-align: center;
+}
+.line-hw .line-hw__input:first-child{
+    margin-right:20px;
+}
+.line-hw__btn {
+    margin-left:auto;
+    display: inline-flex;
+    height: 35px;
+    width: 110px;
+    border: none;
+    color: #000;
+    background: #fbe6eb;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    padding: 0px;
+    letter-spacing: 1.5px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+.line-hw__btn {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.line-hw__btn span {
+    position: relative;
+    transition: all .35s ease-Out;
+}
+#binary-search__input__how{
+    margin-right: 20px;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    background: #E3405F;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0px;
+    top:0px;
+}
+
+.line-hw__btn:hover .slide {
+    left: 0;
+}
+
+.line-hw__btn:hover span {
+    color: #fbe6eb;
+}
+#reset{
+    margin-left: auto;
+    display: inline-flex;
+    height: 35px;
+    width: 110px;
+   border:none;
+    color: #000;
+    background: #ededed;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    padding: 0px;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 1.5px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+#reset:hover .slide2{
+    left:0px;
+}
+#reset:hover span{
+   color:#fff;
+    position: relative;
+    transition: all .35s ease-Out;
+}
+.slide2 {
+    width: 100%;
+    height: 100%;
+    left: -200px;
+    background: #000;
+    position: absolute;
+    transition: all .35s ease-Out;
+    bottom: 0px;
+    top:0px;
+}
+.lines-box{
+    display: flex;
+    flex-direction: column;
+}
+.lines-box .line-hw:first-child .line-hw__display{
+    margin-left: 0px;
+}
