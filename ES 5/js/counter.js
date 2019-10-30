@@ -1,11 +1,7 @@
-
-let recursivelyBtn = document.getElementById('recursively-btn')
-let recursivelyDisplay = document.getElementById('recursively-display')
-
 recursivelyBtn.addEventListener('click', function () {
     recursivelyDisplay.innerHTML = count();
 });
-
+let count = makeCounter();
 function makeCounter() {
     function counter() {
         return counter.currentCount++;
@@ -14,5 +10,5 @@ function makeCounter() {
     return counter;
 }
 
-let count = makeCounter();
+
 

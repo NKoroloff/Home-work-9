@@ -123,6 +123,9 @@ body{
 .line-hw .line-hw__input:first-child{
     margin-right:20px;
 }
+#binary-tree__input__push{
+    margin-right: 20px ;
+}
 .line-hw__btn {
     margin-left:auto;
     display: inline-flex;

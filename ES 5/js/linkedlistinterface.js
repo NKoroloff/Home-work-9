@@ -1,5 +1,4 @@
 function ListInterface () {}
-
 ListInterface.prototype.push = function () {};
 ListInterface.prototype.pop = function () {};
 ListInterface.prototype.unshift = function () {};
@@ -336,6 +335,26 @@ function SuperLList() {
 
 SuperLList.prototype = Object.create(LList.prototype);
 SuperLList.prototype.constructor = SuperLList;
+
+SuperLList.prototype.addToArray = function(n, arr) {
+    for(let i = 1; i <= n; i++){
+        this.push(arr[i]);
+    }
+    return arr;
+}
+
+SuperLList.prototype.findEl = function(n){
+    let tmp = this.root.head;
+    while(tmp != this.root){
+        console.log(tmp.data)
+        if(tmp.data == n){
+            return tmp.data
+        }else{
+            tmp = tmp.next
+        }
+    }
+    return 'Числа нет в списке'
+}
 
 SuperLList.prototype.map = function (func) {
     const tmpArray = [];
