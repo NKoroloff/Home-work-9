@@ -62,11 +62,19 @@ body{
     -webkit-user-select: none;
     font-family: 'Khula', sans-serif;
 }
+.spining{
+    background: url(../img/3.svg) no-repeat;
+    width:20px;
+    height:20px;
+    background-size: contain;
+}
 .wrap {
     max-width:1320px;
     display:flex;
+    transition:0.7s;
     min-width: 960px;
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .wrap h1 {
@@ -74,7 +82,15 @@ body{
 }
 
 .wrap h3 {
-
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.home-task{
+    border:3px solid #E3405F;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .num-task{
     font-size: 40px;
@@ -93,6 +109,7 @@ body{
     padding-bottom:25px;
     padding-top:25px;
     border-bottom: 2px solid #E3405F;
+    flex-wrap: wrap;
 }
 
 .wrap .line-hw .line-hw__input{
@@ -220,4 +237,18 @@ body{
 }
 .lines-box .line-hw:first-child .line-hw__display{
     margin-left: 0px;
+}
+.display-box{
+    display:flex;
+    width:100%;
+    margin-top: 20px;
+}
+.display-box .line-hw__display{
+     width:50%;
+ }
+.display-box .line-hw__display:first-child{
+    margin-left: 0px;
+}
+#binary-tree-compare__input__push{
+    margin-right: 20px;
 }

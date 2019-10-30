@@ -8,13 +8,15 @@
 </head>
 <body>
 <div class="wrap">
-    <h1>HW на 01.11:</h1>
-    <h3>1) счетчик нажатия на кнопку Рекурсивно</h3>
-    <h3>2) вычисление факториал Рекурсивно</h3>
-    <h3>3) binary search алгоритм Рекусривно</h3>
-    <h3>4) вычисления чисел фибоначчи</h3>
-    <h3>5) реализовать Binary search tree collection</h3>
-    <h3>6) измерение времени загрузки и получения данных с List & Binary Search Tree</h3>
+    <div class="home-task">
+        <h1>HW на 01.11:</h1>
+        <h3>1) счетчик нажатия на кнопку Рекурсивно</h3>
+        <h3>2) вычисление факториал Рекурсивно</h3>
+        <h3>3) binary search алгоритм Рекусривно</h3>
+        <h3>4) вычисления чисел фибоначчи</h3>
+        <h3>5) реализовать Binary search tree collection</h3>
+        <h3>6) измерение времени загрузки и получения данных с List & Binary Search Tree</h3>
+    </div>
     <div class="lines-box">
         <div class="line-hw">
             <div class="num-task">1)</div>
@@ -78,7 +80,7 @@
 
             <input type="text " class="line-hw__input" id="binary-tree-compare__input__push" placeholder="How Match Push">
             <input type="text " class="line-hw__input" id="binary-tree-compare__input__find" placeholder="Find Elem">
-
+            <div class="line-hw__display" id="compare__display-linked"></div>
             <button class="line-hw__btn" id="binary-tree-compare__btn">
                 <div class="slide"></div>
                 <span>click me</span>
@@ -94,18 +96,20 @@
 
 
         </div>
-
+        <div class="spining"></div>
         <button id="reset"><div class="slide2"></div><span>reset</span></button>
 
     </div>
 </div>
 
-<script src="js/binarytree.js"></script>
 <script src="js/controller.js"></script>
+<script src="js/binarytree.js"></script>
+
 <script src="js/counter.js"></script>
 <script src="js/factorial.js"></script>
 <script src="js/linkedlistinterface.js"></script>
 <script src="js/binarysearch.js"></script>
 <script src="js/fibonacci.js"></script>
+<script src="js/compare.js"></script>
 </body>
 </html>

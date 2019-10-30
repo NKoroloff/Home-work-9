@@ -348,12 +348,12 @@ SuperLList.prototype.findEl = function(n){
     while(tmp != this.root){
         console.log(tmp.data)
         if(tmp.data == n){
-            return tmp.data
+            return `Число ${tmp.data} найдено `
         }else{
             tmp = tmp.next
         }
     }
-    return 'Числа нет в списке'
+    return 'Числа нет в списке';
 }
 
 SuperLList.prototype.map = function (func) {

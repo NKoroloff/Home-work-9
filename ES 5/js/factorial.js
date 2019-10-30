@@ -6,5 +6,5 @@ const factorial = (n) =>{
 factorailBtn.addEventListener('click', function () {
     let n = factorailInput.value;
     if (n === '') return factorailDisplay.innerHTML = 'Введите число в поле слева';
-    factorailDisplay.innerHTML = factorial(n);
+    factorailDisplay.innerHTML = `Факториал числа ${n} = ${factorial(n)}`;
 });

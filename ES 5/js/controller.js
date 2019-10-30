@@ -1,5 +1,8 @@
 let array = [];
-const tree = new BinnaryTree();
+let binaryTreeDisplay = document.getElementById('binary-tree__display');
+let binaryTreeBtn = document.getElementById('binary-tree__btn');
+let binaryTreeInputPush = document.getElementById('binary-tree__input__push');
+let binaryTreeInputFind = document.getElementById('binary-tree__input__find');
 let randArray = randomNums(500000);
 let resetBtn = document.getElementById('reset');
 let factorailBtn = document.getElementById('factorail-btn');
@@ -15,6 +18,7 @@ let binarySearchDisplay = document.getElementById('binary-search__display');
 let binarySearchInputHow = document.getElementById('binary-search__input__how');
 let binarySearchInputWhich = document.getElementById('binary-search__input__which');
 
+
 function randomNums(quantity) {
     let n = [];
     for(let i =0; i< quantity; i++){
@@ -24,12 +28,21 @@ function randomNums(quantity) {
 }
 
 resetBtn.addEventListener('click' , function () {
-    fibonacciInput.value = '';
-    fibonacciDisplay.innerHTML = '';
+    binaryTreeDisplayCompare.innerHTML = "Binnary Tree Search Time "  + " milliseconds.";
+    linkedListDisplayCompare.innerHTML = "Linked List Search Time" + " milliseconds.";
     binarySearchDisplay.innerHTML = '';
+    binaryTreeDisplay.innerHTML = '';
     binarySearchInputWhich.value = '';
+    recursivelyDisplay.innerHTML = '';
+    fibonacciDisplay.innerHTML = '';
     binarySearchInputHow.value = '';
-    factorailInput.value = '';
     factorailDisplay.innerHTML = '';
-    recursivelyDisplay.innerHTML = ''
+    fibonacciInput.value = '';
+    factorailInput.value = '';
+    binaryTreeInputPush.value = '';
+    binaryTreeInputFind.value = '';
+    binaryTreePush.value = '';
+    binaryTreeFind.value = '';
 })
+
+

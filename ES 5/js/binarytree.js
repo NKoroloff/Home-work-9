@@ -1,12 +1,10 @@
-let binaryTreeBtn = document.getElementById('binary-tree__btn');
-let binaryTreeInputPush = document.getElementById('binary-tree__input__push');
-let binaryTreeInputFind = document.getElementById('binary-tree__input__find');
-let binaryTreeDisplay = document.getElementById('binary-tree__display');
+
+
 
 
 binaryTreeBtn.addEventListener('click', function () {
     tree.addToTree(binaryTreeInputPush.value, randArray)
-    binaryTreeDisplay.innerHTML = tree.search(binaryTreeInputFind.value)
+    binaryTreeDisplay.innerHTML = tree.search(binaryTreeInputFind.value);
 })
 
 class BinnaryTree{
@@ -40,9 +38,9 @@ BinnaryTree.prototype.search = function (searchEl , nextStep) {
     else{
         tmpNode = nextStep;
     }
-    console.log( `${tmpNode.data} `);
+
     if(tmpNode.data == searchEl){
-        return tmpNode.data;
+        return `мы  нашли элемент ${tmpNode.data}`;
     }
     else if( searchEl < tmpNode.data && tmpNode.left != null ){
         return this.search(searchEl, tmpNode.left)
@@ -51,8 +49,8 @@ BinnaryTree.prototype.search = function (searchEl , nextStep) {
         return this.search(searchEl, tmpNode.right)
     }
     else{
-        console.log(`мы не нашли элемент ${searchEl}`);
-        return false;
+
+        return `мы не нашли элемент ${searchEl}`;
     }
 };
 
@@ -82,3 +80,4 @@ BinnaryTree.prototype.push = function (el, nextStep)  {
     }
 };
 
+const tree = new BinnaryTree();

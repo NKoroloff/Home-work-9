@@ -1,18 +1,18 @@
 
 
 
-const fibonacci = (n,f = 0,s = 1) =>{
-    if(n <= 1) return n;
-    else return fibonacci(n-1) + fibonacci(n-2);
-/*    if(n <= 2) return  s + f;
+const fibonacci = (n,first = 0,second = 1) =>{
+   /* if(n <= 1) return n;
+    else return fibonacci(n-1) + fibonacci(n-2);*/
+    if(n <= 2) return  second + first;
 
     else{
-        let count = s + f;
-        f = s;
-        s = count;
+        let count = second + first;
+        first = second;
+        second = count;
         n--;
-        return fibonachi(n, f ,s)
-    }*/
+        return fibonacci(n, first ,second)
+    }
  /*   let a = 1;
     let b = 1;
     for (let i = 3; i <= n; i++) {

@@ -27,7 +27,7 @@ binarySearchBtn.addEventListener('click' , function(){
     let how = binarySearchInputHow.value;
     if(witch == '' || how =='') return binarySearchDisplay.innerHTML = 'Не заполнено какое-либо из полей слева'
     addToArray(how, array);
-    binarySearchDisplay.innerHTML = binarySearch(witch, array);
+    binarySearchDisplay.innerHTML = 'Число '  +  binarySearch(witch, array) + ' найдено' ;
 
 });
 
